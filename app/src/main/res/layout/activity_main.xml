@@ -14,40 +14,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474">
+        app:layout_constraintVertical_bias="0.413">
 
         <RadioButton
             android:id="@+id/radbtn_0"
             android:layout_width="match_parent"
             android:layout_height="75dp"
+            android:onClick="checkButton"
             android:text="Business Man"
-            android:textStyle="bold"
             android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radbtn_1"
             android:layout_width="match_parent"
             android:layout_height="75dp"
+            android:onClick="checkButton"
             android:text="Employee"
-            android:textStyle="bold"
             android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radbtn_2"
             android:layout_width="match_parent"
             android:layout_height="75dp"
+            android:onClick="checkButton"
             android:text="Student"
             android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/txtv_0"
-        android:layout_width="212dp"
-        android:layout_height="68dp"
+        android:layout_width="242dp"
+        android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
@@ -57,13 +60,13 @@
         android:text="Choose Ur Job"
         android:textColor="#3F51B5"
         android:textSize="30sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
-        android:textStyle="italic"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.864" />
+        app:layout_constraintVertical_bias="0.978" />
 
     <Button
         android:id="@+id/applyBtn"
@@ -79,12 +82,12 @@
 
     <TextView
         android:id="@+id/txtv_1"
-        android:layout_width="251dp"
-        android:layout_height="72dp"
+        android:layout_width="253dp"
+        android:layout_height="85dp"
         android:layout_marginTop="4dp"
         android:text="Ur Selection"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />

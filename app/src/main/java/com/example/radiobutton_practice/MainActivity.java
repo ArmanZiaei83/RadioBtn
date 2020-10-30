@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     RadioGroup radioGroup ;
     RadioButton radbtn ;
     TextView txt ;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGroup);
         txt = (TextView) findViewById(R.id.txtv_1);
         btn = (Button) findViewById(R.id.applyBtn);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +40,6 @@ public class MainActivity extends AppCompatActivity {
     public void  checkButton (View v){
         int count = radioGroup.getCheckedRadioButtonId() ;
         radbtn = findViewById(count);
-        Toast.makeText(this , "Your selection : " + radbtn.getText() , Toast.LENGTH_SHORT).show();
+        Toast.makeText(this , "You've Chosen : " + radbtn.getText() , Toast.LENGTH_SHORT).show();
     }
 }
